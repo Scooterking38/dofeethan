@@ -5,6 +5,8 @@ class animal:
         self.x += num
     def request(self):
         print(self.x)
+    def mynuss(self,num):
+        self.x -= num
 ethan = animal()
 elijah = animal()
 
@@ -14,5 +16,9 @@ elijah.add(2)
 ethan.add(3)
 elijah.add(67)
 
+ethan.request()
+elijah.request()
+ethan.mynuss(8)
+elijah.mynuss(138)
 ethan.request()
 elijah.request()
