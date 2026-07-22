@@ -1,0 +1,28 @@
+#randint
+import random
+print(random.randint(1, 10))
+
+
+
+#randint guessing game
+def tryint(num):
+    try:
+        return int(num)
+    except Exception as a:
+        print('must be integer')
+
+
+import random
+number = str(random.randint(1, 10))
+urnumber = str(input("""what do you think the number is? (it's between 1 and 10 and is
+an integer i swear if you try something else i will slap you)\n"""))
+if number == urnumber:
+    print("YIPPEE U SO COOL I WANT TO MARRY U")
+elif tryint(urnumber) <= 10:
+    print("u eat faeces")
+elif tryint(urnumber) >= 1:
+    print("silly boi (it's pronounced b-wah)")
+else:
+    print("i will punch you, you egg sandwich from mars >:(. i disagree with reform uk sin embargo i like puffins")
+
+print(number)
