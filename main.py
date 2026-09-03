@@ -43,3 +43,17 @@ match option:
         print(num1*num2)
     case _:
         print("gimme a reason not to cry")
+
+
+
+sf = lambda a,b,c,d : print(a+b*2+d/c)
+sf(4,6,4,16)
+
+def plus(a):
+    return lambda x : x*a
+timesfive = plus(5)
+print(timesfive(5))
+
+plus = lambda a : lambda x : x*a
+timessix = plus(6)
+print(timessix(int(input("what times six\n"))))
